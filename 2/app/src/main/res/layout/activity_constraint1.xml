@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Input标签 -->
+    <TextView
+        android:id="@+id/tv_input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 输入显示区 -->
+    <TextView
+        android:id="@+id/input_display"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#D0D0A0"
+        android:contentDescription="输入显示区域"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="16dp"
+        android:text="0.0"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_label" />
+
+    <!-- 按钮容器 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_display">
+
+        <!-- 第一行：7、8、9、+ -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字7"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn4"
+            app:layout_constraintEnd_toStartOf="@id/btn8"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字8"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn5"
+            app:layout_constraintEnd_toStartOf="@id/btn9"
+            app:layout_constraintStart_toEndOf="@id/btn7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字9"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn6"
+            app:layout_constraintEnd_toStartOf="@id/btn_plus"
+            app:layout_constraintStart_toEndOf="@id/btn8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#E65100"
+            android:contentDescription="加号"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_mul"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 第二行：4、5、6、* -->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字4"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn1"
+            app:layout_constraintEnd_toStartOf="@id/btn5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn7" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字5"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn2"
+            app:layout_constraintEnd_toStartOf="@id/btn6"
+            app:layout_constraintStart_toEndOf="@id/btn4"
+            app:layout_constraintTop_toBottomOf="@id/btn8" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字6"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn3"
+            app:layout_constraintEnd_toStartOf="@id/btn_mul"
+            app:layout_constraintStart_toEndOf="@id/btn5"
+            app:layout_constraintTop_toBottomOf="@id/btn9" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#E65100"
+            android:contentDescription="乘号"
+            android:text="*"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_minus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn6"
+            app:layout_constraintTop_toBottomOf="@id/btn_plus" />
+
+        <!-- 第三行：1、2、3、- -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字1"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_dot"
+            app:layout_constraintEnd_toStartOf="@id/btn2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字2"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn0"
+            app:layout_constraintEnd_toStartOf="@id/btn3"
+            app:layout_constraintStart_toEndOf="@id/btn1"
+            app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字3"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_clear"
+            app:layout_constraintEnd_toStartOf="@id/btn_minus"
+            app:layout_constraintStart_toEndOf="@id/btn2"
+            app:layout_constraintTop_toBottomOf="@id/btn6" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#E65100"
+            android:contentDescription="减号"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_equal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn3"
+            app:layout_constraintTop_toBottomOf="@id/btn_mul" />
+
+        <!-- 第四行：.、0、清除、= -->
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="小数点"
+            android:text="."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#333333"
+            android:contentDescription="数字0"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_clear"
+            app:layout_constraintStart_toEndOf="@id/btn_dot"
+            app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#B71C1C"
+            android:contentDescription="清除"
+            android:text="C"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_equal"
+            app:layout_constraintStart_toEndOf="@id/btn0"
+            app:layout_constraintTop_toBottomOf="@id/btn3" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="#1B5E20"
+            android:contentDescription="等于"
+            android:text="="
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_clear"
+            app:layout_constraintTop_toBottomOf="@id/btn_minus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

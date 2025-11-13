@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LayoutLab2</string>
+    <!-- 添加以下字符串 -->
+    <string name="space_stations">Space Stations</string>
+    <string name="space_stations_icon">Space Stations icon</string>
+    <string name="flights">Flights</string>
+    <string name="flights_icon">Flights icon</string>
+    <string name="rovers">Rovers</string>
+    <string name="rovers_icon">Rovers icon</string>
+    <string name="dca">DCA</string>
+    <string name="mars">MARS</string>
+    <string name="one_way">One Way</string>
+    <string name="traveller">1 Traveller</string>
+    <string name="direction_arrow">Direction arrow</string>
+    <string name="small_rocket">Small rocket</string>
+    <string name="planet">Planet</string>
+    <string name="depart">DEPART</string>
+</resources>

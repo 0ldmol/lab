@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 实验要求的“字体大小”子菜单（文档1-27：小10号/中16号/大20号） -->
+    <item
+        android:id="@+id/menu_text_size"
+        android:title="字体大小"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/size_small"
+                android:title="小（10号）"/>
+            <item
+                android:id="@+id/size_middle"
+                android:title="中（16号）"/>
+            <item
+                android:id="@+id/size_large"
+                android:title="大（20号）"/>
+        </menu>
+    </item>
+
+    <!-- 实验要求的“字体颜色”子菜单（文档1-29：红色/黑色） -->
+    <item
+        android:id="@+id/menu_text_color"
+        android:title="字体颜色"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/color_red"
+                android:title="红色"/>
+            <item
+                android:id="@+id/color_black"
+                android:title="黑色"/>
+        </menu>
+    </item>
+
+    <!-- 实验要求的“普通菜单项”（文档1-28：点击弹出Toast） -->
+    <item
+        android:id="@+id/item_normal"
+        android:title="普通菜单项"
+        app:showAsAction="never"/>
+
+</menu>

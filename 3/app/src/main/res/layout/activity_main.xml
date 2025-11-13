@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:padding="8dp">
+
+    <!-- 测试文本（用于菜单修改字体大小/颜色，实验1-25~1-29） -->
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用于测试的内容"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="?android:attr/colorPrimary"
+        android:textColor="?android:attr/colorBackground"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 对话框触发按钮（自定义AlertDialog入口，实验1-13~1-22） -->
+    <Button
+        android:id="@+id/btn_show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示登录对话框"
+        android:background="?android:attr/colorPrimary"
+        android:textColor="?android:attr/colorBackground"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 动物ListView（实验1-4~1-11：Lion/Tiger等列表，含图片+文字） -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动物列表"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <ListView
+        android:id="@+id/lv_animal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ActionMode ListView（实验1-31~1-37：One/Two等列表，长按触发上下文菜单） -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ActionMode列表"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <ListView
+        android:id="@+id/lv_action_mode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

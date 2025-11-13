@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 第1行：One,One、One,Two、One,Three、One,Four -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="One,One"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="One,Two"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="One,Three"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="One,Four"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- 第2行：Two,One、Two,Two、Two,Three、Two,Four -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Two,One"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Two,Two"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Two,Three"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Two,Four"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- 第3行：Three,One、Three,Two、Three,Three、Three,Four -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Three,One"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Three,Two"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Three,Three"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Three,Four"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- 第4行：Four,One、Four,Two、Four,Three、Four,Four -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Four,One"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Four,Two"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Four,Three"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Four,Four"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

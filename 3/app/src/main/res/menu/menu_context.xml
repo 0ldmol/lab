@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 实验要求的ActionMode删除项（文档1-37：删除选中列表项） -->
+    <item
+        android:id="@+id/item_delete"
+        android:title="删除"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="always"/>
+
+</menu>

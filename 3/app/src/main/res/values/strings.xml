@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Android界面组件实验</string>
+
+    <!-- 动物列表相关（文档1-6） -->
+    <string name="lion">Lion</string>
+    <string name="tiger">Tiger</string>
+    <string name="monkey">Monkey</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="elephant">Elephant</string>
+    <string name="animal_icon_desc">动物图标</string>
+
+    <!-- 通知相关（文档1-10：通知标题/内容） -->
+    <string name="notification_channel_name">动物列表通知</string>
+    <string name="notification_channel_desc">显示选中的动物列表项信息</string>
+    <string name="notification_title">选中通知</string>
+    <string name="notification_content">你选中了：%1$s</string>
+
+    <!-- Toast相关（文档1-9：显示选中信息；文档1-28：普通菜单项提示） -->
+    <string name="toast_selected">选中：%1$s</string>
+    <string name="toast_normal_menu">点击了普通菜单项</string>
+    <string name="toast_delete_success">已删除：%1$s</string>
+    <string name="toast_notification_permission">请先授予通知权限</string>
+    <string name="toast_notification_granted">通知权限已授予</string>
+    <string name="toast_notification_denied">通知权限已拒绝，无法发送通知</string>
+
+    <!-- ActionMode相关（文档1-37：选中提示） -->
+    <string name="action_mode_title">1 selected</string>
+
+    <!-- ActionMode列表项（文档1-37：One/Two/Three/Four/Five） -->
+    <string name="item_one">One</string>
+    <string name="item_two">Two</string>
+    <string name="item_three">Three</string>
+    <string name="item_four">Four</string>
+    <string name="item_five">Five</string>
+</resources>
