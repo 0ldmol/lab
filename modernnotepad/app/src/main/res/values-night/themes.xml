@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 深色主题 -->
+    <style name="Theme.ModernNotepad" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_300</item>
+        <item name="colorPrimaryDark">@color/blue_900</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <!-- 确保没有 ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

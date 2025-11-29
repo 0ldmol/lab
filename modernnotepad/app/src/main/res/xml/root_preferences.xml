@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="外观设置">
+        
+        <ListPreference
+            app:key="theme_preference"
+            app:title="主题模式"
+            app:summary="选择应用的主题模式"
+            app:entries="@array/theme_options"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="system" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="编辑界面设置">
+
+        <ListPreference
+            app:key="editor_background"
+            app:title="编辑界面背景"
+            app:summary="选择笔记编辑界面的背景颜色"
+            app:entries="@array/background_options"
+            app:entryValues="@array/background_values"
+            app:defaultValue="default" />
+
+        <SwitchPreference
+            app:key="auto_save"
+            app:title="自动保存"
+            app:summary="编辑时自动保存内容"
+            app:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
